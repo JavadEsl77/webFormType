@@ -1,0 +1,135 @@
+.gallery {
+    margin: 5px;
+    border: 1px solid #999999;
+    border-radius: 16px;
+    position: relative;
+
+}
+
+.gallery_header {
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 0 16px;
+    margin: 0 20px;
+}
+
+#contaner {
+    display: flex;
+    margin-right: 24px;
+}
+
+.gallery_contaner {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+.gallery input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain ;
+}
+
+.content-gallery {
+
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  
+}
+
+div.gallery:hover {
+    border: 1px solid rgb(25, 255, 102);
+}
+
+.pixel {
+    width: 1100px;
+    display: flex;
+    direction: rtl;
+    text-align: right;
+    padding: 0 16px;
+    flex-direction: column;
+}
+
+.pixel li {
+    display: block;
+    font-size: 12px;
+}
+
+.pixel h3 {
+    margin-top: 16px;
+    margin-bottom: 0;
+    margin-right: 16px;
+    font-size: 24px;
+    color: #e7b52d;
+}
+
+.pixel p {
+    color: #999999;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+
+input:checked {
+    left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgb(181, 5, 216);
+}
+
+input:checked+img {
+    width: auto;
+    height: 100vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+input:checked+img+div {
+    left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rezome > li {
+    color: rgb(0, 0, 0);
+    margin: 16px;
+}
+
+.rezome > ul {
+    color: rgb(139, 139, 139);
+    display: block;
+}
+
+li > a {
+
+    color: aliceblue;
+    text-decoration: none;
+}
